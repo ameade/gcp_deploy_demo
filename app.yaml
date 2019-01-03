@@ -1,2 +1,2 @@
 runtime: docker
-api_version: 1
+env: flex
