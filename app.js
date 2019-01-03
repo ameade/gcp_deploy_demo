@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
 
 console.log('Server starting…');
 
-server.listen(8080, () => {
+server.listen(80, () => {
   console.log('Started.')
 });
 
