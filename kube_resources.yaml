@@ -54,7 +54,7 @@ items:
           run: web-server
       spec:
         containers:
-        - image: gcr.io/qwiklabs-gcp-d10bb62d4b798dd9/my-web-server
+        - image: YOUR_IMAGE_LOCATION
           imagePullPolicy: Always
           name: web-server
           resources: {}
