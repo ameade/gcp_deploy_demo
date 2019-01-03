@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   console.log(`Request received at: ${new Date()}`);
-  res.end('Hello containers...');
+  res.end('Goodbye containers...');
 });
 
 console.log('Server starting…');
