@@ -4,22 +4,6 @@ items:
   kind: Service
   metadata:
     labels:
-      component: apiserver
-      provider: kubernetes
-    name: kubernetes
-    namespace: default
-  spec:
-    ports:
-    - name: https
-      port: 443
-      protocol: TCP
-      targetPort: 443
-    sessionAffinity: None
-    type: ClusterIP
-- apiVersion: v1
-  kind: Service
-  metadata:
-    labels:
       run: web-server
     name: web-server
     namespace: default
@@ -29,7 +13,7 @@ items:
     - nodePort: 30719
       port: 80
       protocol: TCP
-      targetPort: 80
+      targetPort: 8080
     selector:
       run: web-server
     sessionAffinity: None
